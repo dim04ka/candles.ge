@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Head from 'next/head'
+import { return_url } from '../../utils'
 
 export default function Product({ products }) {
 
@@ -54,13 +55,6 @@ export default function Product({ products }) {
 
 
 export async function getServerSideProps(context) {
-  function return_url(context) {
-    if (process.env.NODE_ENV === "production") {
-      return `https://${context.req.rawHeaders[1]}`;
-    } else if (process.env.NODE_ENV !== "production") {
-      return "http://localhost:3000";
-    }
-  }
 
   let url = return_url(context);
   const data = await fetch(`${url}/api/data`).then((res) => res.json());

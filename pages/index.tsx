@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 import Header from '../components/Header'
 import ProductCard from '../components/ProductCard'
+import { return_url } from '../utils'
 
 export default function Gallery({ products, candles }) {
 
@@ -48,16 +49,9 @@ export default function Gallery({ products, candles }) {
   )
 }
 
+
+
 export async function getServerSideProps(context) {
-
-  function return_url(context) {
-    if (process.env.NODE_ENV === "production") {
-      return `https://${context.req.rawHeaders[1]}`;
-    } else if (process.env.NODE_ENV !== "production") {
-      return "http://localhost:3000";
-    }
-  }
-
   let url = return_url(context);
 
   const data = await fetch(`${url}/api/data`).then((res) => res.json());
