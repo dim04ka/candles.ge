@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@next/font": "latest",
+    "@vercel/analytics": "^0.1.11",
     "commerce-sdk": "^2.8.0",
     "eslint-import-resolver-typescript": "^3.5.3",
     "next": "latest",

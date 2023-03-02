@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import Footer from '../components/Footer'
 import Head from 'next/head'
 import { Montserrat } from '@next/font/google'
+import { Analytics } from '@vercel/analytics/react';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -18,7 +19,7 @@ export default function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
         <Footer />
       </main>
-      
+      <Analytics />
     </>
   )
 }
