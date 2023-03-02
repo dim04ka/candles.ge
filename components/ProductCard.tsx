@@ -14,7 +14,7 @@ export default function ProductCard({ product }) {
       <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
         <Image
           alt="product image"
-          src={product.imageGroups[0].images[0].link}
+          src={product.images[0].link}
           fill
           className={cn(
             'object-cover duration-700 ease-in-out group-hover:opacity-75	',
@@ -27,7 +27,7 @@ export default function ProductCard({ product }) {
       </div>
       <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900">
         <h3>{product.name}</h3>
-        <p>${product.price}</p>
+        <p className="pl-2">₾{product.price}</p>
       </div>
       <p className="mt-1 text-sm italic text-gray-500">
         {product.shortDescription}

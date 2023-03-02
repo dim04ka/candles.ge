@@ -1,13 +1,13 @@
 export default function Footer() {
   return (
-    <footer className="center mt-5 flex justify-center space-x-4 bg-[#E7E8EF] p-4 text-xs">
-      <p>Powered by Next.js, Salesforce Commerce Cloud, and Vercel </p>
+    <footer className="center mt-5 flex justify-center space-x-4 bg-[#E7E8EF] p-4 text-xs mt-5">
+      <p> Наш инстаграм</p>
       <span>|</span>
       <a
-        href="https://github.com/vercel/next.js/tree/canary/examples/with-sfcc"
+        href="https://www.instagram.com/store.candles.ge/"
         className="font-medium text-orange-600"
       >
-        Source code
+        store.candles.ge
       </a>
     </footer>
   )
