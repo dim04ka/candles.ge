@@ -17,6 +17,16 @@ export default function Product({ products }) {
       <Head>
         <title>{product.name}</title>
         <meta property="og:title" content={product.longDescription} key="title" />
+        <meta name="description" content="Свечи || Соевый воск || Ручная работа || Тбилиси || Подарок. Свечи ручной работы Тбилиси Грузия" key="desc" />
+        <meta
+          property="og:description"
+          content='Свечи || Соевый воск || Ручная работа || Тбилиси || Подарок. Свечи ручной работы Тбилиси Грузия'
+        />
+        <meta
+          property="og:image"
+          content={product.images[0].link}
+        />
+        
       </Head>
       <div className="flex flex-col justify-between">
       <div className="mx-auto mt-16 max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
