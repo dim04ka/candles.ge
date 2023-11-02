@@ -4,10 +4,10 @@ export default function Footer() {
       <p> Наш инстаграм</p>
       <span>|</span>
       <a
-        href="https://www.instagram.com/store.candles.ge/"
+        href="https://www.instagram.com/mara.candles.ge/"
         className="font-medium text-orange-600"
       >
-        store.candles.ge
+          mara.candles.ge
       </a>
     </footer>
   )
