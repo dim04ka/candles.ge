@@ -9,7 +9,7 @@ export default function Product({ products }) {
   const router = useRouter()
   const id = router.query.slug as string
 
-  
+
   const product = products.filter((product) => product.id === Number(id))[0]
 
   return (
@@ -26,7 +26,7 @@ export default function Product({ products }) {
           property="og:image"
           content={product.images[0].link}
         />
-        
+
       </Head>
       <div className="flex flex-col justify-between">
       <div className="mx-auto mt-16 max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
@@ -47,9 +47,9 @@ export default function Product({ products }) {
             <h1 className="mt-1 text-4xl font-bold uppercase text-gray-900 sm:text-5xl sm:tracking-tight lg:text-5xl">
               {product.name}
             </h1>
-            <h1 className="mt-3 text-4xl font-bold text-gray-500 sm:text-3xl sm:tracking-tight lg:text-3xl">
-            ₾{product.price}
-            </h1> 
+            {/*<h1 className="mt-3 text-4xl font-bold text-gray-500 sm:text-3xl sm:tracking-tight lg:text-3xl">*/}
+            {/*₾{product.price}*/}
+            {/*</h1> */}
             <div className="mt-10 mb-5 border-t border-gray-200 pt-10 font-bold">
               Описание
             </div>
@@ -59,7 +59,7 @@ export default function Product({ products }) {
       </div>
     </div>
     </>
-    
+
   )
 }
 

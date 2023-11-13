@@ -6,8 +6,7 @@ export default function Footer() {
       <a
         href="https://www.instagram.com/mara.candles.ge/"
         className="font-medium text-orange-600"
-      >
-          mara.candles.ge
+      >mara.candles.ge
       </a>
     </footer>
   )
